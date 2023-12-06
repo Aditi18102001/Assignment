@@ -1,0 +1,31 @@
+Algorithm:
+Hard-3
+
+The code defines a function count_digit_one(n) that calculates the count of digit '1' in the numbers from 1 to n (inclusive). This algorithm is commonly used to solve the "Number of 1 Bits" or similar problems.
+
+Initialization:
+
+Initialize a variable count to 0 to keep track of the count of digit '1'.
+Initialize a variable factor to 1, representing the current place value (1, 10, 100, ...).
+Loop Through Digits:
+
+While the current place value (factor) is less than or equal to n, continue the loop.
+The loop iterates through each digit place (ones, tens, hundreds, etc.).
+Calculate Full Groups:
+
+Calculate the number of full groups of 10 that fit in the current place value.
+This represents how many times the digit '1' appears at that place value for all full groups.
+Calculate Remaining:
+
+Calculate the remaining digit after removing the full groups.
+This represents the part of the number that doesn't belong to any full group.
+Count 1s in the Current Place Value:
+
+Add the count of digit '1' in the current place value to the overall count.
+This includes the contribution from full groups and the remaining digits.
+Move to the Next Place Value:
+
+Multiply the factor by 10 to move to the next place value (tens, hundreds, thousands, etc.).
+Return the Result:
+
+Once the loop completes, the function returns the total count of digit '1' in the numbers from 1 to n.

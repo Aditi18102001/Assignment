@@ -1,0 +1,32 @@
+Algorithm:
+Medium-2
+
+This code is an implementation of the Boyer-Moore Voting Algorithm to find elements that appear more than  n/3 times in an array. 
+Initialization of Variables:
+
+candidate1 and candidate2 represent the potential majority elements.
+count1 and count2 represent the counts of occurrences for candidate1 and candidate2.
+Finding Candidates using Boyer-Moore Voting Algorithm:
+
+Iterate through the array and update the candidates and counts.
+If the current element is equal to candidate1, increment count1.
+If the current element is equal to candidate2, increment count2.
+If count1 is 0, update candidate1 to the current element and set count1 to 1.
+If count2 is 0, update candidate2 to the current element and set count2 to 1.
+If none of the above conditions is met, decrement both count1 and count2.
+Reset Counts:
+
+Reset counts for candidates to 0.
+Count Occurrences of Candidates:
+
+Iterate through the array again and count occurrences of the candidates.
+Check and Add to Result:
+
+Check if the counts of candidates exceed ⌊ n/3 ⌋.
+If yes, add the candidate to the result list.
+Return Result:
+
+Return the list containing the majority elements.
+
+
+

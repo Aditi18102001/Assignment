@@ -1,0 +1,16 @@
+Algorithm:
+Easy-1
+The provided code defines a function called last_length that takes a string s as input and calculates the length of the last word in that string.
+s = s.strip(): Removes leading and trailing spaces from the input string s.
+
+last_space_index = s.rfind(' '): Finds the last occurrence of a space (' ') in the modified string s. The rfind method searches for the specified value (' ') from right to left in the string and returns the index of the last occurrence. If no space is found, last_space_index is set to -1.
+
+Check if there is no space in the modified string
+If there is no space in the string, it means there is only one word, so the function returns the length of the entire string.
+
+If there is at least one space in the string, the function returns the length of the last word
+This extracts the substring starting from the character after the last space to the end of the string and calculates its length. This is the length of the last word.
+
+Finally, the script takes an input string from the user (str1), calls the last_length function with this input, and prints the result. The result is the length of the last word in the input string after removing leading and trailing spaces.
+
+
